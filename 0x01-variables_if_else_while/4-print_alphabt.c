@@ -1,18 +1,24 @@
+/*
+ * File: 4-print_alphabet.ci
+ * Auth: Samuel Kioko
+ */
+
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - entry point
- * Return: 0 when successful
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char abc[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	int x;
 
-	for (i = 0; i < 26; i++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		if (abc[i] != 'e' && abc[i] != 'q')
-			putchar(abc[i]);
+		if (x != 'e' && x != 'q')
+		{
+			putchar(x);
+		}
 	}
 	putchar('\n');
 	return (0);
