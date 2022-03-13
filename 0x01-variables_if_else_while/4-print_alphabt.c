@@ -1,6 +1,6 @@
 /*
  * File: 4-print_alphabet.ci
- * Auth: Samuel Kioko
+ * Auth: Griffins Oduol
  */
 
 #include <stdio.h>
