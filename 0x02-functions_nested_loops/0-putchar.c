@@ -1,20 +1,23 @@
 #include "main.h"
-#include "main.h"
+/* more headers should be here */
+
 /**
- * main - prints _putchar, followed by a new line.
- * Return: 0 Always
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char putC[8] = "_putchar";
 
+	int counter = 0;
+
+	while (counter < 8)
+	{
+		_putchar(putC[counter]);
+		counter++;
+	}
+	_putchar('\n');
 	return (0);
 }
