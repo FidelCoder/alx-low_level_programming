@@ -1,0 +1,23 @@
+NAME = school
+
+CC = gcc
+SRC = school.c main.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+
+TMPFILES = *~
+
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $^ -o $(NAME)
+
+obj: $(SRC)
+	$(CC) $^
+
+clean:
+	$(RM) $(NAME) $(TMPFILES)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
